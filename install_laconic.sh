@@ -10,6 +10,8 @@ sudo apt update
 
 # Install curl
 sudo apt install curl git wget htop tmux build-essential jq make lz4 gcc unzip -y
+echo "Installation complete!"
+sleep 3
 
 # Install go
 cd $HOME
@@ -23,4 +25,13 @@ echo "export PATH=$PATH:/usr/local/go/bin:~/go/bin" >> ~/.bash_profile
 source $HOME/.bash_profile
 [ ! -d ~/go/bin ] && mkdir -p ~/go/bin
 
-echo $(go version) && sleep 1
+echo "Installation complete!"
+sleep 3
+
+cd $home
+git clone https://git.vdb.to/cerc-io/laconicd.git
+cd laconicd
+make install
+
+echo "Installation complete!"
+sleep 3
