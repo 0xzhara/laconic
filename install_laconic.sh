@@ -28,14 +28,6 @@ source $HOME/.bash_profile
 echo "Installation complete!"
 sleep 3
 
-# Install go
-cd $home
-sudo apt update
-sudo apt install golang-go
-
-echo "Installation complete!"
-sleep 3
-
 cd $home
 git clone https://git.vdb.to/cerc-io/laconicd.git
 cd laconicd
